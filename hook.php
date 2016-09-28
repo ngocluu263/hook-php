@@ -17,6 +17,6 @@ $hook->collection('scores')->create(array(
 
 $test = $hook->collection('scores')->get()
 
-var_dump($test);
+printf("Content: %s", $test[0]);
 
 
