@@ -6,8 +6,8 @@ require 'vendor/autoload.php';
 
 $hook = Hook\Client::configure(array(
   'app_id' => 1,
-  'key' => '006f04b4f723c9920e259a746f9318be',
-  'endpoint' => 'http://hook.dev/index.php/'
+  'key' => '638d9ba9643e568c1065084e3e67fb7e',
+  'endpoint' => 'http://172.16.4.56:4665/index.php/'
 ));
 
 $hook->collection('scores')->create(array(
