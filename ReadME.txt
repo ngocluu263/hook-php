@@ -146,3 +146,43 @@ phpunit/php-code-coverage suggests installing ext-xdebug (>=2.0.5)
 phpunit/phpunit suggests installing phpunit/php-invoker (~1.1)
 Generating autoload files
 [root@foreman hook]# hook server
+
+
+ hook app:new app1
+...
+create hook-ext/credentials/development/cli.json
+create hook-ext/credentials/development/browser.json
+create hook-ext/credentials/development/device.json
+create hook-ext/credentials/development/server.json
+Application created successfully.
+[root@foreman restful_api]# hook cache:clear
+...
+Cache cleared successfully.
+[root@foreman restful_api]# hook keys
+...
+PHP Notice:  Undefined index: name in /root/restful_api/hook-cli/src/commands/keys.php on line 17
+Application name:
+Application keys:
+{
+        app_id: 57ec549c9f303e0a188b4567
+        key: f3d9e21750fb8377c5da251095a2f9f6
+        type: cli
+}
+{
+        app_id: 57ec549c9f303e0a188b4567
+        key: 17fdce1ac1d58d42c281de1ea35f2f7d
+        type: browser
+}
+{
+        app_id: 57ec549c9f303e0a188b4567
+        key: 8509cedd873df1ee32e22dd873d211c8
+        type: device
+}
+{
+        app_id: 57ec549c9f303e0a188b4567
+        key: 634429bcb4b290842d9ba693547f5550
+        type: server
+}
+
+
+
