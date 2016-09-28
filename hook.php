@@ -15,8 +15,6 @@ $hook->collection('scores')->create(array(
   'score' => 7
 ));
 
-$test = $hook->collection('scores')->get()
-
-printf("Content: %s", $test);
+printf("Content: %s", $hook->collection('scores')->get());
 
 
