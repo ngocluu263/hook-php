@@ -9,9 +9,9 @@ require 'vendor/autoload.php';
 //  'endpoint' => 'http://192.168.116.135:4665/index.php/'
 //));
 $hook = Hook\Client::configure(array(
-  'app_id' => 1,
-  'key' => '57ec549c9f303e0a188b4567',
-  'endpoint' => 'http://192.168.116.135:4665/index.php/'
+  'app_id' => '57ec549c9f303e0a188b4567',
+  'key' => '17fdce1ac1d58d42c281de1ea35f2f7d',
+  'endpoint' => 'http://192.168.116.135:4665/'
 ));
 
 $hook->collection('scores')->create(array(
@@ -19,6 +19,7 @@ $hook->collection('scores')->create(array(
   'score' => 7
 ));
 
-#printf("Content: %s", $hook->collection('scores')->get());
+
+
 
 
